@@ -1,0 +1,47 @@
+URxvt.perl-ext-common: default,font-size,matcher
+
+URxvt*termName: rxvt-unicode-256color
+
+URxvt.font: xft:Hack-Regular:pixelsize=16
+
+URxvt*scrollBar: false
+URxvt.keysym.Control-Left:  \033[1;5D
+URxvt.keysym.Control-Right: \033[1;5C
+
+! special
+*.foreground:   #c1c8c3
+*.background:   #101110
+*.cursorColor:  #c1c8c3
+
+! black
+*.color0:       #1a1c1b
+*.color8:       #b4b251
+
+! red
+*.color1:       #232523
+*.color9:       #6fd2df
+
+! green
+*.color2:       #333634
+*.color10:      #f3c1b5
+
+! yellow
+*.color3:       #4a4d4b
+*.color11:      #b7b543
+
+! blue
+*.color4:       #666b68
+*.color12:      #47e99e
+
+! magenta
+*.color5:       #888e8a
+*.color13:      #f0bddf
+
+! cyan
+*.color6:       #afb6b2
+*.color14:      #4bc3d1
+
+! white
+*.color7:       #dce4df
+*.color15:      #c5c350
+	
