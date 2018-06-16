@@ -204,6 +204,7 @@ bar {
 
 #exec --no-startup-id setxkbmap us,ru -option 'grp:super_tab_toggle'
 #layout config
-#exec "setxkbmap -layout us,ru"
-#exec "setxkbmap -option 'grp:ctrl_shift_toggle'"
+exec_always setxkbmap -layout us,ru
+exec_always setxkbmap -option 'grp:lwin_toggle'
 exec --no-startup-id clipit
+
