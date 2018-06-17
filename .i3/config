@@ -204,7 +204,7 @@ for_window [class="^.*"] border pixel 0
 
 #exec --no-startup-id setxkbmap us,ru -option 'grp:super_tab_toggle'
 #layout config
-exec_always setxkbmap -layout us,ru
-exec_always setxkbmap -option 'grp:lwin_toggle'
+exec "setxkbmap -layout us,ru"
+exec "setxkbmap -option 'grp:lwin_toggle'"
 exec --no-startup-id clipit
 
