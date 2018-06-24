@@ -207,4 +207,5 @@ for_window [class="^.*"] border pixel 0
 exec_always "setxkbmap -layout us,ru"
 exec_always "setxkbmap -option 'grp:lwin_toggle'"
 exec --no-startup-id clipit
-
+exec ~/Scripts/xrandr.sh
+#exec_always ~/.fehbg &
