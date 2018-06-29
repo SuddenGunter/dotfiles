@@ -1,0 +1,13 @@
+apulse
+aurman
+clipit
+expac-git
+fsharp
+jetbrains-toolbox
+lightscreen
+msbuild-stable
+otf-fira-code-git
+pcmciautils
+skypeforlinux-stable-bin
+upwork
+visual-studio-code-bin
