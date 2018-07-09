@@ -98,3 +98,4 @@ source $ZSH/oh-my-zsh.sh
 
 
 export PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
+export PATH=/home/gunter/.yarn/bin:$PATH
