@@ -8,21 +8,44 @@ URxvt*scrollBar: false
 URxvt.keysym.Control-Left:  \033[1;5D
 URxvt.keysym.Control-Right: \033[1;5C
 
-*background: rgb:1a/1a/1a
-*foreground: rgb:d6/d6/d6
-*color0:     rgb:00/00/00
-*color1:     rgb:9e/18/28
-*color2:     rgb:00/88/00
-*color3:     rgb:96/8a/38
-*color4:     rgb:41/41/71
-*color5:     rgb:96/3c/59
-*color6:     rgb:41/81/79
-*color7:     rgb:be/be/be
-*color8:     rgb:66/66/66
-*color9:     rgb:cf/61/71
-*color10:     rgb:7c/bc/8c
-*color11:     rgb:ff/f7/96
-*color12:     rgb:41/86/be
-*color13:     rgb:cf/9e/be
-*color14:     rgb:71/be/be
-*color15:    rgb:ff/ff/ff	
+! Panda for Xresources terminals
+! Support: https://github.com/SuddenGunter
+! Based on https://github.com/PandaTheme/panda-terminal
+! Converted via http://terminal.sexy
+
+! special
+*.foreground:   #f3f3f3
+*.background:   #1f1f20
+*.cursorColor:  #f3f3f3
+
+! black
+*.color0:       #2a2d32
+*.color8:       #2a2d32
+
+! red
+*.color1:       #ff276d
+*.color9:       #ff276d
+
+! green
+*.color2:       #00ffdb
+*.color10:      #00ffdb
+
+! yellow
+*.color3:       #ffb863
+*.color11:      #ffb863
+
+! blue
+*.color4:       #6cb1ff
+*.color12:      #6cb1ff
+
+! magenta
+*.color5:       #b184ef
+*.color13:      #b184ef
+
+! cyan
+*.color6:       #67d3c2
+*.color14:      #67d3c2
+
+! white
+*.color7:       #f3f3f3
+*.color15:      #f3f3f0
