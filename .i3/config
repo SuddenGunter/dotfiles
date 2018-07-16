@@ -196,7 +196,7 @@ bar {
 
 #customization!
 #remove borders
-for_window [class="^.*"] border pixel 0
+for_window [class="^.*"] border pixel 1
 
 #exec --no-startup-id xrandr --newmode 1920x1080_60.00 173.00 1920 2048 2248 2576 1080 1083 1088  1120 -hsync +vsync
 #exec --no-startup-id xrandr --addmode VGA1 1920x1080_60.00
