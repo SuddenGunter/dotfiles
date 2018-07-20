@@ -63,6 +63,7 @@ POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(root_indicator)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
+  yarn
 )
 
 source $ZSH/oh-my-zsh.sh
