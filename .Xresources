@@ -2,11 +2,18 @@ URxvt.perl-ext-common: default,font-size,matcher
 
 URxvt*termName: rxvt-unicode-256color
 
-URxvt.font: xft:Hack-Regular:pixelsize=16
+URxvt.font: xft:Hack-Regular:pixelsize=18
 
 URxvt*scrollBar: false
 URxvt.keysym.Control-Left:  \033[1;5D
 URxvt.keysym.Control-Right: \033[1;5C
+URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
+URxvt*iso14755: False
+
+! Fix for letter spacing
+URxvt.letterSpace: -1
+
 
 ! Panda for Xresources terminals
 ! Support: https://github.com/SuddenGunter
@@ -48,4 +55,4 @@ URxvt.keysym.Control-Right: \033[1;5C
 
 ! white
 *.color7:       #f3f3f3
-*.color15:      #f3f3f0
+*.color15: #f3f3f0
