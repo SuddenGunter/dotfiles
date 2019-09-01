@@ -177,6 +177,17 @@ bindsym $mod+r mode "resize"
 bar {
 	position top
         status_command i3status
+        font pango:monospace 8
+        colors {
+           background #1f1f20
+           statusline #f3f3f3
+           separator #666666
+           #                  border  backgr. text
+           focused_workspace  #285577 #285577 #ffffff
+           active_workspace   #5f676a #5f676a #ffffff
+           inactive_workspace #1f1f20 #1f1f20 #888888
+           urgent_workspace   #900000 #900000 #ffffff
+        }
 }
 
 
