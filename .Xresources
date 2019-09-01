@@ -1,10 +1,13 @@
-URxvt.perl-ext-common: default,font-size,matcher
+URxvt.perl-ext-common: default,matcher,font-size
+URxvt.matcher.button: 1
+URxvt.urlLauncher: /usr/bin/xdg-open
 
 URxvt*termName: rxvt-unicode-256color
 
-URxvt.font: xft:Hack-Regular:pixelsize=18
+URxvt.font: xft:Hack-Regular:pixelsize=16
 
 URxvt*scrollBar: false
+!URxvt.keysym.C-BackSpace: \033[33~
 URxvt.keysym.Control-Left:  \033[1;5D
 URxvt.keysym.Control-Right: \033[1;5C
 URxvt.keysym.Shift-Control-V: eval:paste_clipboard
@@ -56,3 +59,14 @@ URxvt.letterSpace: -1
 ! white
 *.color7:       #f3f3f3
 *.color15: #f3f3f0
+
+
+! URxvt.perl-ext-common:      default,clipboard,url-select,keyboard-select
+
+! URxvt.url-select.launcher:  firefox-developer-edition
+! URxvt.url-select.underline: true
+! URxvt.keysym.M-u:           perl:url-select:select_next
+! URxvt.keysym.M-Escape:      perl:keyboard-select:activate
+! URxvt.keysym.M-s:           perl:keyboard-select:search
+
+
