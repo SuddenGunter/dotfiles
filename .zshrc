@@ -72,10 +72,15 @@ POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(root_indicator)
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
+    helm	
     aws
+    npm
     docker-compose
     git
+    git-flow
     docker
+    kubectl
+    doctl
 )
 
 source $ZSH/oh-my-zsh.sh
