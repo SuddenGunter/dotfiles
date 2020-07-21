@@ -15,17 +15,17 @@ order += "volume master"
 order += "wireless _first_"
 order += "battery all"
 order += "disk /"
-order += "cpu_temperature 0"
+# order += "cpu_temperature 0"
 order += "tztime local"
 
 tztime local {
         format = "%A %d-%m-%Y %H:%M"
 }
 
-cpu_temperature 0 {
-        format = "CPU: %degrees °C"
-	path = "/sys/class/thermal/thermal_zone2/temp"
-}
+# cpu_temperature 0 {
+#         format = "CPU: %degrees °C"
+# 	path = "/sys/class/thermal/thermal_zone2/temp"
+# }
 
 disk "/" {
         format = "%avail"

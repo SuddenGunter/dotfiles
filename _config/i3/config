@@ -179,13 +179,20 @@ bar {
         status_command i3status
         font pango:monospace 8
         colors {
-           background #1f1f20
+           # old background #1f1f20
+           background #282c34
            statusline #f3f3f3
            separator #666666
            #                  border  backgr. text
+           #old
+           #focused_workspace  #285577 #285577 #ffffff
+           #active_workspace   #5f676a #5f676a #ffffff
+           #inactive_workspace #1f1f20 #1f1f20 #888888
+           #urgent_workspace   #900000 #900000 #ffffff
+
            focused_workspace  #285577 #285577 #ffffff
            active_workspace   #5f676a #5f676a #ffffff
-           inactive_workspace #1f1f20 #1f1f20 #888888
+           inactive_workspace #282c34 #282c34 #888888
            urgent_workspace   #900000 #900000 #ffffff
         }
 }
@@ -198,8 +205,8 @@ hide_edge_borders both
 font "pango:SomeFont 0"
 bindsym XF86MonBrightnessUp exec xbacklight -inc 10 # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 10 # decrease screen brightness
-exec_always "feh --bg-scale /home/gunter/Downloads/bkg.jpg"
-bindsym --release Shift+Print exec "scrot -s '/home/gunter/Pictures/screenshots/%s_%H%M_%d%m%Y_$wx$h.png'"
+exec_always "feh --bg-scale /home/gunter/Pictures/881292.jpg"
+bindsym --release Shift+Print exec "scrot -a $(slop -f '%x,%y,%w,%h')  '/home/gunter/Pictures/screenshots/%s_%H%M_%d%m%Y_$wx$h.png'"
 
 # Make the currently focused window a scratchpad
 bindsym $mod+Shift+minus move scratchpad
