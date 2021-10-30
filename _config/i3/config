@@ -3,9 +3,9 @@
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
 #--autostart-
-#exec --no-startup-id compton -b -C -f --config ~/.config/compton.conf 
+#exec --no-startup-id compton -b -C -f --config ~/.config/compton.conf
 #exec_always --no-startup-id compton --config /home/gunter/.config/compton
-exec --no-startup-id "compton -b -C -f --config /home/gunter/.config/compton/compton.conf"
+#exec --no-startup-id "compton -b -C -f --config /home/gunter/.config/compton/compton.conf"
 
 #--autostart-
 
@@ -199,17 +199,22 @@ bar {
 
 
 #-----custom-----
-exec --no-startup-id setxkbmap -layout us,ru  -option 'grp:caps_toggle' 
+exec --no-startup-id setxkbmap -layout us,ru  -option 'grp:caps_toggle'
+exec --no-startup-id picom -b
 for_window [class="^.*"] border pixel 0
 hide_edge_borders both
 font "pango:SomeFont 0"
-bindsym XF86MonBrightnessUp exec xbacklight -inc 10 # increase screen brightness
-bindsym XF86MonBrightnessDown exec xbacklight -dec 10 # decrease screen brightness
-exec_always "feh --bg-scale /home/gunter/Pictures/881292.jpg"
-bindsym --release Shift+Print exec "scrot -a $(slop -f '%x,%y,%w,%h')  '/home/gunter/Pictures/screenshots/%s_%H%M_%d%m%Y_$wx$h.png'"
+exec_always "feh --bg-scale /home/gunter/Pictures/ark_euromek_big.jpg"
+exec --no-startup-id /usr/bin/dolphin --daemon
+bindsym --release Print exec "scrot -a $(slop -f '%x,%y,%w,%h')  '/home/gunter/Pictures/screenshots/%s_%H%M_%d%m%Y_$wx$h.png'"
 
 # Make the currently focused window a scratchpad
 bindsym $mod+Shift+minus move scratchpad
 # Show the first scratchpad window
 bindsym $mod+minus scratchpad show
 
+
+#pause / play
+#bindsym XF86AudioPlay exec playerctl play
+#bindsym XF86AudioPause exec playerctl pause
+bindsym XF86AudioPlay exec playerctl play-pause

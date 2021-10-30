@@ -1,0 +1,4 @@
+Host sample
+    User git
+    IdentityFile ~/.ssh/KEY
+    HostKeyAlgorithms +ssh-rsa

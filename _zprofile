@@ -17,7 +17,7 @@ export EDITOR=nano
 export GOPATH=$HOME/Projects/go
 
 #export GTK_USE_PORTAL=1
-export QT_QPA_PLATFORMTHEME=qt5ct 
+export QT_QPA_PLATFORMTHEME=qt5ct
 #export XDG_CURRENT_DESKTOP=KDE
 #export KDE_SESSION_VERSION=5
 export QT_STYLE_OVERRIDE=kvantum

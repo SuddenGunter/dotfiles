@@ -1,1 +1,1 @@
-redshift -l  "49.58:36.15"
+redshift -O 5500
