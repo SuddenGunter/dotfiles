@@ -1,0 +1,46 @@
+# ~/.gitconfig:
+
+[user]
+	email = email
+	name = name
+	signingKey = key
+[commit]
+    gpgsign = true
+[gpg]
+	program = gpg2
+
+[url "git@bitbucket.org:PROJECT1"]
+	insteadOf = https://bitbucket.org/PROJECT1
+
+[includeIf "gitdir:/home/gunter/Projects/PROJECT1/"]
+    path = /home/gunter/Projects/PROJECT1/.gitconfig
+
+[includeIf "gitdir:/home/gunter/Projects/PROJECT2/"]
+    path = /home/gunter/Projects/PROJECT2/.gitconfig
+
+# ~/bitbucket-work-proj/.gitconfig
+
+[user]
+	email = work_email
+	name = name
+
+[commit]
+    gpgsign = false # bitbucket cloud can't sign commits
+
+[core]
+    sshCommand = "ssh -i ~/.ssh/KEY_FILE"
+
+# ~/github-work-proj/.gitconfig
+
+[user]
+	email = work_email
+	name = name
+	signingKey = key
+
+[gpg]
+	program = gpg2
+[commit]
+    gpgsign = true
+
+[core]
+    sshCommand = "ssh -i ~/.ssh/KEY_FILE_2"
