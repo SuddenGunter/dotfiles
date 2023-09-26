@@ -136,7 +136,7 @@ font:
     #style: Bold Italic
 
   # Point size
-  size: 11.0
+  size: 8.0
 
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
@@ -623,7 +623,7 @@ colors:
     cyan:    '#93a1a1' # base1
     white:   '#fdf6e3' # base3
 
-# Colors (One Dark)
+#colors (One Dark)
 # colors:
 #   # Default colors
 #   primary:
@@ -711,3 +711,58 @@ colors:
 #     magenta: '#FF9AC1'
 #     cyan:    '#67d3c2'
 #     white:   '#ffffff'
+
+
+# dracula
+# colors:
+#   primary:
+#     background: '#282a36'
+#     foreground: '#f8f8f2'
+#     bright_foreground: '#ffffff'
+#   cursor:
+#     text: CellBackground
+#     cursor: CellForeground
+#   vi_mode_cursor:
+#     text: CellBackground
+#     cursor: CellForeground
+#   search:
+#     matches:
+#       foreground: '#44475a'
+#       background: '#50fa7b'
+#     focused_match:
+#       foreground: '#44475a'
+#       background: '#ffb86c'
+#     bar:
+#       background: '#282a36'
+#       foreground: '#f8f8f2'
+#   hints:
+#     start:
+#       foreground: '#282a36'
+#       background: '#f1fa8c'
+#     end:
+#       foreground: '#f1fa8c'
+#       background: '#282a36'
+#   line_indicator:
+#     foreground: None
+#     background: None
+#   selection:
+#     text: CellForeground
+#     background: '#44475a'
+#   normal:
+#     black: '#21222c'
+#     red: '#ff5555'
+#     green: '#50fa7b'
+#     yellow: '#f1fa8c'
+#     blue: '#bd93f9'
+#     magenta: '#ff79c6'
+#     cyan: '#8be9fd'
+#     white: '#f8f8f2'
+#   bright:
+#     black: '#6272a4'
+#     red: '#ff6e6e'
+#     green: '#69ff94'
+#     yellow: '#ffffa5'
+#     blue: '#d6acff'
+#     magenta: '#ff92df'
+#     cyan: '#a4ffff'
+#     white: '#ffffff'
